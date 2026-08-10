@@ -1,0 +1,19 @@
+{
+  "name": "xray-extension",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+     "build": "vite build --mode content && vite build --mode background && vite build --mode sidepanel && vite build --mode settings",
+    "copy-assets": "copyfiles -u 1 \"src/**/*.html\" \"src/**/*.css\" dist"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.2.5",
+    "copyfiles": "^2.4.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.1"
+  },
+  "dependencies": {
+    "openai": "^7.4.0"
+  }
+}

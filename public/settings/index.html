@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>X-Ray Settings</title>
+
+  <link
+    rel="stylesheet"
+    href="settings.css"
+  >
+</head>
+
+<body>
+  <main>
+    <h1>X-Ray Settings</h1>
+
+    <section>
+      <h2>OpenAI API Key</h2>
+
+      <p>
+        X-Ray uses your own OpenAI API key to
+        generate document summaries.
+      </p>
+
+      <label for="api-key">
+        API key
+      </label>
+
+      <input
+        id="api-key"
+        type="password"
+        autocomplete="off"
+        placeholder="sk-..."
+      >
+
+      <div class="actions">
+        <button
+          id="save-key"
+          type="button"
+        >
+          Save key
+        </button>
+
+        <button
+          id="remove-key"
+          type="button"
+          class="secondary"
+        >
+          Remove key
+        </button>
+      </div>
+
+      <p
+        id="status"
+        aria-live="polite"
+      ></p>
+    </section>
+  </main>
+
+  <script
+    type="module"
+    src="settings.js"
+  ></script>
+</body>
+</html>
