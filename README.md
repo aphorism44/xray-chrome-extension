@@ -1,3 +1,9 @@
+
+![The sidebar...](xray1.png)
+![...generating summaries.](xray2.png)
+
+
+
 # X-Ray
 
 X-Ray is a Chrome/Edge extension for exploring long webpages.
